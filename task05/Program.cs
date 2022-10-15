@@ -1,4 +1,9 @@
-﻿Console.WriteLine("Введите число: ");
+﻿// программа принимает число N
+// на выходе показывает целые числа 
+// в промежутке от N до -N
+// 2 -> "-2, -1, 0, 1, 2"
+
+Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
 if (number > 0)
