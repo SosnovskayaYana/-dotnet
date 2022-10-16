@@ -14,9 +14,9 @@ if(N > 0)
 
     int count = 1;
 
-        while (count < N)
+        while (count <= N)
         {
-            if ((N % 2) == 0)
+            if ((count % 2) == 0)
             {
                 Console.Write($"{count} ");
             }
