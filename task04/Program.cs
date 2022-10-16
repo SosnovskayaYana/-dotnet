@@ -32,7 +32,5 @@ if (max < number3)
     {
         max = number3;
     }
-    else
-    {
-        max = number2;
-    }
+    
+    Console.Write($"max = {max}");
