@@ -14,9 +14,9 @@ int number2 = Convert.ToInt32(Console.ReadLine());
 int digit1 = number2 * number2;
 int digit2 = number1 * number1;
 
-if 
+if
 (number1 == number2 * number2 || number2 == number1 * number1)
-Console.WriteLine("Да ");
+    Console.WriteLine("Да ");
 
-else 
-Console.WriteLine("нет ");
+else
+    Console.WriteLine("нет ");

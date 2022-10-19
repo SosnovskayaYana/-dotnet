@@ -13,8 +13,8 @@ int number2 = Convert.ToInt32(Console.ReadLine());
 int lostNum = number1 % number2;
 
 if (number1 % number2 == 0)
-Console.WriteLine($"Число {number1} кратно {number2} ");
+    Console.WriteLine($"Число {number1} кратно {number2} ");
 
 
 else
-Console.WriteLine($"Не кратно, остаток {lostNum}");
+    Console.WriteLine($"Не кратно, остаток {lostNum}");
