@@ -19,9 +19,9 @@ int SumNumbers(int number)
 }
 
 
-Console.WriteLine("ВВедите число: ");
+Console.WriteLine("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
 int sumNumber = SumNumbers(num);
 
-Console.WriteLine(sumNumber);
+Console.WriteLine($"Сумма чисел от 1 до {num} = {sumNumber}");
