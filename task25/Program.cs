@@ -29,7 +29,7 @@ double numA = Convert.ToInt32(Console.ReadLine());
 Console.Write("Введите второе число: ");
 double numB = Convert.ToInt32(Console.ReadLine());
 
-if (numA > 0 && numB > 0)
+if (numA != 0 && numB > 0)
 {
 double powerNumber = PowerNumber (numA, numB);
 
