@@ -18,8 +18,8 @@
 
 double PowerNumber(double numberA, double numberB)
 {
-double numberC = Math.Pow(numberA, numberB);
-return numberC;
+    double numberC = Math.Pow(numberA, numberB);
+    return numberC;
 }
 
 
@@ -31,10 +31,10 @@ double numB = Convert.ToInt32(Console.ReadLine());
 
 if (numA != 0 && numB > 0)
 {
-double powerNumber = PowerNumber (numA, numB);
+    double powerNumber = PowerNumber(numA, numB);
 
-Console.WriteLine($"{numA} в степени {numB} равно {powerNumber} ");
+    Console.WriteLine($"{numA} в степени {numB} равно {powerNumber} ");
 }
 
 else
-Console.WriteLine("Некорректный ввод чисел. ");
+    Console.WriteLine("Некорректный ввод чисел. ");
