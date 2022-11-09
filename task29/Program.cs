@@ -6,10 +6,11 @@
 
 int[] ArrayDigit(int[] arrayFirst)
 {
-    Random rnd = new Random();
+    // Random rnd = new Random();
     for (int i = 0; i < arrayFirst.Length; i++)
     {
-        arrayFirst[i] = rnd.Next(0, 99);
+        // arrayFirst[i] = rnd.Next(0, 99);
+        arrayFirst[i] = new Random().Next(0, 100);
     }
     return arrayFirst;
 }
