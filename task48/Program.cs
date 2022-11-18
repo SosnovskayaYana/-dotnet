@@ -15,6 +15,8 @@ int[,] CreateMatrix(int rows, int columns)
             array[i, j] = i + j;
     return array;
 }
+
+
 void PrintMatrix(int[,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
