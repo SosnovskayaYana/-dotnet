@@ -33,7 +33,7 @@ void PrintMatrix(int[,] matrix)
 }
 
 
-int[,] RepleaceRowsColumns(int[,] array2d)
+int[,] RepleaceRowsToColumns(int[,] array2d)
 {
     int[,] newArray2D = new int[array2d.GetLength(0), array2d.GetLength(1)];
 for (int i = 0; i < array2d.GetLength(0); i++)
@@ -46,6 +46,22 @@ for (int i = 0; i < array2d.GetLength(0); i++)
 return newArray2D;
 }
 
+/*
+int[,] ReplaceRowsToColumns(int[,] matrix)
+{
+for (int i = 0; i < matrix.GetLength(0); i++)
+{
+for (int j = i; j < matrix.GetLength(1); j++)
+{
+int temp = matrix[i, j];
+matrix[i, j] = matrix[j, i];
+matrix[j, i] = temp;
+}
+}
+return matrix;
+}
+*/
+
 
 int[,]newMatrix = CreateMatrixRndInt(4, 4, 0, 10);
 PrintMatrix(newMatrix);
@@ -53,8 +69,8 @@ Console.WriteLine("");
 
 if(newMatrix.GetLength(0) == newMatrix.GetLength(1))
 {
-int[,] repleaceRowsColumns = RepleaceRowsColumns(newMatrix);
-PrintMatrix(repleaceRowsColumns);
+int[,] repleaceRowsToColumns = RepleaceRowsToColumns(newMatrix);
+PrintMatrix(repleaceRowsToColumns);
 }
 
 else Console.WriteLine("Невозможно заменить строки на столбцы ");
