@@ -60,10 +60,10 @@ void PrintNewArray(int[,] inputArray)
 {
     for (int i = 0; i < inputArray.GetLength(0); i++)
     {
-        if (i == indexRow) continue;
+        if (i == indexRow) continue;           // останавливает
         for (int j = 0; j < inputArray.GetLength(1); j++)
         {
-            if (j == indexCol) continue;
+            if (j == indexCol) continue;       // останавливает
             Console.Write(inputArray[i, j] + "\t");
         }
         Console.WriteLine();
